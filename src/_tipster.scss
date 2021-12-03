@@ -1,0 +1,42 @@
+[role='tipster-tooltip']
+{
+    position: absolute;   
+    background: rgb(255, 255, 255);    
+    z-index: 999;
+    box-shadow: 0 0.4em 1em rgba(210,215,221,0.5);
+    border-radius: 5px;
+    border: solid 1px #D2D7DD;
+    animation: tipster-open 60ms ease-in;
+}
+
+@keyframes tipster-open {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+.tipster-content {
+  max-width: 400px;
+  padding:0.75em;  
+}
+
+.tipster-arrow {
+  height: 8px;
+  width: 16px;
+  position: absolute;
+  background: transparent;
+  color: #FFF;
+  z-index: -1;
+  svg {
+      position: absolute;
+      filter: drop-shadow(0 -3px 3px rgba(0, 0, 0, 0.16));
+      color: #fff;
+      stroke-width: 2px;
+      stroke: #d7d7d7;
+      stroke-dasharray: 30px;
+      stroke-dashoffset: -54px;
+  }
+}
