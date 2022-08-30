@@ -1,6 +1,6 @@
 {
   "name": "intoy-tipster",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "js tipster",
   "main": "dist/tipster.js",
   "typings": "dist/tipster.d.ts",
